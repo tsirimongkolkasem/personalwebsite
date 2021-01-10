@@ -8,6 +8,7 @@
 }
 
 body {
+  height: 100%;
   margin: 0;
 
   font-family: sans-serif;
@@ -17,9 +18,6 @@ body {
   color: #333;
 }
 
-body {
-  height: 100%;
-}
 a {
   text-decoration: none;
   color: $primary-color;
@@ -33,19 +31,24 @@ img {
   width: 100%;
 }
 
+.normal {
+  font-weight: normal;
+}
+
 // navbar
 
 .navbar {
   display: flex;
   align-items: center;
+  background-color: rgba(14, 13, 13, 0.506);
   justify-content: space-between;
   padding: 0.7rem 2rem;
   position: fixed;
   z-index: 1;
   width: 100%;
   top: 0;
+
   //border-bottom: solid 1px $primary-color;
-  opacity: 0.9;
 
   ul {
     display: flex;
@@ -70,6 +73,8 @@ img {
   background-position: bottom;
   min-height: 780px;
   max-height: auto;
+  padding-top: 7rem;
+  margin-bottom: 2rem;
   &-inner {
     color: #fff;
     height: 100%;
@@ -110,6 +115,78 @@ img {
     align-items: center;
     justify-content: center;
     text-align: center;
+  }
+}
+
+// Education
+.education {
+  margin: 0;
+}
+.education-logos {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
+  grid-template-rows: auto;
+  grid-gap: 1.5rem;
+
+  .education-logo-imperial {
+    grid-column: 2;
+    height: 20vh;
+    width: 100%;
+    background: url("../img/imperial_logo.jpg") no-repeat center;
+    background-size: contain;
+  }
+
+  .education-logo-ucl {
+    min-height: 20vh;
+    background: url("../img/ucl_logo.jpg") no-repeat center;
+    background-size: contain;
+  }
+
+  .education-logo-bromsgrove {
+    margin-right: 4rem;
+    min-height: 20vh;
+    background: url("../img/bromsgrove_logo.png") no-repeat center;
+    background-size: contain;
+  }
+}
+.education-grid {
+  padding: 2rem 0;
+  display: grid;
+  height: 100%;
+  background-color: #fff;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(auto-fill, 1fr);
+  /*
+  .education-background-1 {
+    display: flex;
+    grid-area: left;
+  }*/
+
+  .education-place {
+    color: $primary-color;
+    grid-column: 3/11;
+    padding: 3.5rem 0 0 0;
+    text-align: left;
+    justify-items: left;
+    align-content: left;
+  }
+  .education-degree {
+    color: #333;
+    grid-column: 3/11;
+    text-align: left;
+    justify-items: left;
+    align-content: left;
+  }
+
+  .education-modules {
+    color: #333;
+    grid-column: 3/11;
+    text-align: left;
+  }
+  .education-results {
+    color: #333;
+    grid-column: 3/11;
+    text-align: left;
   }
 }
 

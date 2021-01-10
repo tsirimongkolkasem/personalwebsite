@@ -1,10 +1,6 @@
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .hide-sm {
     display: none;
-  }
-
-  .container {
-    margin-top: 8rem;
   }
 
   // Navbar
@@ -15,6 +11,7 @@
     ul {
       justify-content: center;
       text-align: center;
+      font-size: 0.9rem;
     }
 
     h1 {
