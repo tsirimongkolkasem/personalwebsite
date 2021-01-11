@@ -3,7 +3,7 @@
   max-width: $max-width;
   margin: auto;
   overflow: hidden;
-  padding: 0 0;
+  padding: 1rem 1rem;
   margin: 1rem auto;
 }
 
@@ -100,7 +100,7 @@ span {
   }
   &-light {
     @include set-background($light-color);
-    border: #ccc 1px solid;
+    //border: #ccc 1px solid;
   }
   &-dark {
     @include set-background($dark-color);
