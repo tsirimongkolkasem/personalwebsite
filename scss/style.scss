@@ -96,6 +96,7 @@ img {
 }
 .education-logos {
   display: grid;
+  margin-top: 2rem;
   grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
   grid-template-rows: auto;
   grid-gap: 1.5rem;
@@ -109,50 +110,62 @@ img {
   }
 
   .education-logo-ucl {
-    min-height: 20vh;
+    height: 20vh;
     background: url("../img/ucl_logo.jpg") no-repeat center;
     background-size: contain;
   }
 
   .education-logo-bromsgrove {
     margin-right: 4rem;
-    min-height: 20vh;
+    height: 20vh;
     background: url("../img/bromsgrove_logo.png") no-repeat center;
     background-size: contain;
   }
 }
+
 .education-grid {
   padding: 2rem 0;
+  margin-top: 2rem;
   display: grid;
   height: 100%;
   background-color: #fff;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("../img/ucl.jfif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(auto-fill, 1fr);
 
   .education-place {
     color: $primary-color;
-    grid-column: 3/11;
+    grid-column: 4/11;
     padding: 3.5rem 0 0 0;
     text-align: left;
     justify-items: left;
     align-content: left;
   }
   .education-degree {
-    color: #333;
-    grid-column: 3/11;
+    color: #fff;
+    grid-column: 4/11;
     text-align: left;
     justify-items: left;
     align-content: left;
   }
 
   .education-modules {
-    color: #333;
-    grid-column: 3/11;
+    color: #fff;
+    grid-column: 4/11;
     text-align: left;
   }
   .education-results {
-    color: #333;
-    grid-column: 3/11;
+    color: #fff;
+    grid-column: 4/11;
     text-align: left;
   }
 }
@@ -182,29 +195,29 @@ img {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     grid-gap: 3rem 1rem;
-    text-align: center;
-    justify-content: center;
-    justify-items: center;
+    text-align: space-evenly;
+    justify-content: space-evenly;
+    justify-items: space-evenly;
     .img-1 {
-      height: 15vh;
+      height: 12vh;
       width: 100%;
       background: url("../img/c++.png") no-repeat center;
       background-size: contain;
     }
     .img-2 {
-      height: 15vh;
+      height: 12vh;
       width: 100%;
       background: url("../img/python.png") no-repeat center;
       background-size: contain;
     }
     .img-3 {
-      height: 15vh;
+      height: 12vh;
       width: 100%;
       background: url("../img/javascript.png") no-repeat center;
       background-size: contain;
     }
     .img-4 {
-      height: 15vh;
+      height: 12vh;
       width: 100%;
       background: url("../img/html_css.png") no-repeat center;
       background-size: contain;
@@ -219,6 +232,12 @@ img {
       height: 15vh;
       width: 100%;
       background: url("../img/microsoft.png") no-repeat center;
+      background-size: contain;
+    }
+    .img-7 {
+      height: 15vh;
+      width: 100%;
+      background: url("../img/matlab.png") no-repeat center;
       background-size: contain;
     }
   }
