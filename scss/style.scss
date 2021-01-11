@@ -156,6 +156,7 @@ img {
   background-color: #fff;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(auto-fill, 1fr);
+
   /*
   .education-background-1 {
     display: flex;
@@ -187,6 +188,75 @@ img {
     color: #333;
     grid-column: 3/11;
     text-align: left;
+  }
+}
+
+// Skills section
+
+.skills {
+  margin-top: 1rem;
+  padding-top: 3rem;
+  display: grid;
+  background-color: rgba(9, 5, 199, 0.306);
+  font-size: 1rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  .skills-pic {
+    min-height: 20vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 3rem 1rem;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    .img-1 {
+      height: 15vh;
+      width: 100%;
+      background: url("../img/c++.png") no-repeat center;
+      background-size: contain;
+    }
+    .img-2 {
+      height: 15vh;
+      width: 100%;
+      background: url("../img/python.png") no-repeat center;
+      background-size: contain;
+    }
+    .img-3 {
+      height: 15vh;
+      width: 100%;
+      background: url("../img/javascript.png") no-repeat center;
+      background-size: contain;
+    }
+    .img-4 {
+      height: 15vh;
+      width: 100%;
+      background: url("../img/html_css.png") no-repeat center;
+      background-size: contain;
+    }
+    .img-5 {
+      height: 15vh;
+      width: 100%;
+      background: url("../img/latex.png") no-repeat center;
+      background-size: contain;
+    }
+    .img-6 {
+      height: 15vh;
+      width: 100%;
+      background: url("../img/microsoft.png") no-repeat center;
+      background-size: contain;
+    }
+  }
+  .skills-list {
+    ul {
+      li {
+        margin: 2rem 0;
+        font-size: 1.1rem;
+      }
+    }
   }
 }
 
@@ -294,7 +364,6 @@ img {
   animation: animate-1 6s 1;
   animation-fill-mode: forwards;
 }
-
 .animate2 {
   white-space: nowrap;
   opacity: 0;
@@ -303,9 +372,22 @@ img {
   animation-fill-mode: forwards;
 }
 
+.animate3 {
+  white-space: nowrap;
+  opacity: 0;
+  overflow: hidden;
+  animation: animate-2 14s 1;
+  animation-fill-mode: forwards;
+}
+
 @keyframes animate-1 {
   0% {
     width: 0%;
+    border-right: 2px solid $dark-color;
+  }
+  50% {
+    width: 50%;
+    border-right: 2px solid $dark-color;
   }
   90% {
     width: 100%;

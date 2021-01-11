@@ -4,8 +4,13 @@
   margin: auto;
   overflow: hidden;
   padding: 0 0;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
+  margin: 1rem auto;
+}
+
+.container2 {
+  max-width: $max-width;
+  height: 100%;
+  margin: 1rem auto;
 }
 
 //text styles
@@ -16,7 +21,7 @@
 }
 
 .large {
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 1.2;
   margin-bottom: 1rem;
 }
@@ -59,8 +64,12 @@ span {
 
 .bold {
   font-weight: bold;
+}
+
+.inline {
   display: inline;
 }
+
 .round-img {
   border-radius: 50%;
 }
