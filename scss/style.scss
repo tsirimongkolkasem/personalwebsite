@@ -94,41 +94,6 @@ img {
 .education {
   margin: 0;
 }
-.education-logos {
-  padding: 4rem 0rem;
-  grid-column: 2/12;
-  display: grid;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.67),
-    rgba(255, 255, 255, 0.67)
-  );
-  margin-top: 2rem;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-gap: 1.5rem;
-
-  .education-logo-imperial {
-    grid-column: 1;
-    height: 20vh;
-    width: 100%;
-    background: url("../img/imperial_logo.jpg") no-repeat center;
-    background-size: contain;
-  }
-
-  .education-logo-ucl {
-    height: 20vh;
-    background: url("../img/ucl_logo.jpg") no-repeat center;
-    background-size: contain;
-  }
-
-  .education-logo-bromsgrove {
-    margin-right: 4rem;
-    height: 20vh;
-    background: url("../img/bromsgrove_logo2.png") no-repeat center;
-    background-size: contain;
-  }
-}
 
 .education-grid {
   padding: 2rem 0;
@@ -149,7 +114,41 @@ img {
   background-attachment: fixed;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(auto-fill, 1fr);
+  .education-logos {
+    padding: 4rem 0rem;
+    grid-column: 2/12;
+    display: grid;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.67),
+      rgba(255, 255, 255, 0.67)
+    );
+    margin-top: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1.5rem;
 
+    .education-logo-imperial {
+      grid-column: 1;
+      height: 20vh;
+      width: 100%;
+      background: url("../img/imperial_logo.jpg") no-repeat center;
+      background-size: contain;
+    }
+
+    .education-logo-ucl {
+      height: 20vh;
+      background: url("../img/ucl_logo.jpg") no-repeat center;
+      background-size: contain;
+    }
+
+    .education-logo-bromsgrove {
+      margin-right: 4rem;
+      height: 20vh;
+      background: url("../img/bromsgrove_logo2.png") no-repeat center;
+      background-size: contain;
+    }
+  }
   .education-place {
     color: $primary-color;
     grid-column: 4/11;
